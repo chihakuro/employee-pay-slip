@@ -1,18 +1,16 @@
-## Getting Started
+# Employee Monthly Pay Slip
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Coding exercise for generating pay slip of employee in a month. It is deployed to Azure App Services as a microservice that can be called in applications.
 
-## Folder Structure
+Noteable features:
+- Microsoft Azure: For cloud deployment and management of the web app.
+- Spring Boot: For building RESTful web services
+- Gradle: For optimizing building procedures
+- Java: Language used for coding (Version 17)
 
-The workspace contains two folders by default, where:
+## Instructions
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
