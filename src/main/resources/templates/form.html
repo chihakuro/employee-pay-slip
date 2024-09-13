@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Pay Slip</title>
+</head>
+<body>
+    <h1>Upload Employee Pay Slip CSV</h1>
+    <form action="/generate" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Generate Payment</button>
+    </form>
+</body>
+</html>

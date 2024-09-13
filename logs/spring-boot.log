@@ -1,0 +1,36 @@
+2024-09-13T12:21:11.206+07:00  INFO 948 --- [main] com.example.EmployeePaySlip              : Starting EmployeePaySlip using Java 21.0.4 with PID 948 (C:\Users\haimi\Desktop\java\EmployeePaySlip\build\libs\EmployeePaySlip-1.0.0.jar started by MSI in C:\Users\haimi\Desktop\java\EmployeePaySlip)
+2024-09-13T12:21:11.208+07:00  INFO 948 --- [main] com.example.EmployeePaySlip              : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T12:21:11.932+07:00  INFO 948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-09-13T12:21:11.942+07:00  INFO 948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T12:21:11.943+07:00  INFO 948 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2024-09-13T12:21:12.013+07:00  INFO 948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T12:21:12.014+07:00  INFO 948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2024-09-13T12:21:12.291+07:00  INFO 948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-09-13T12:21:12.312+07:00  INFO 948 --- [main] com.example.EmployeePaySlip              : Started EmployeePaySlip in 1.45 seconds (process running for 1.76)
+2024-09-13T12:21:46.745+07:00  INFO 948 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T12:21:46.746+07:00  INFO 948 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T12:21:46.747+07:00  INFO 948 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-13T12:40:16.717+07:00  INFO 27356 --- [main] com.example.EmployeePaySlip              : Starting EmployeePaySlip using Java 21.0.4 with PID 27356 (C:\Users\haimi\Desktop\java\EmployeePaySlip\build\libs\EmployeePaySlip-1.0.0.jar started by MSI in C:\Users\haimi\Desktop\java\EmployeePaySlip)
+2024-09-13T12:40:16.719+07:00  INFO 27356 --- [main] com.example.EmployeePaySlip              : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T12:40:17.460+07:00  INFO 27356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-09-13T12:40:17.469+07:00  INFO 27356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T12:40:17.470+07:00  INFO 27356 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2024-09-13T12:40:17.535+07:00  INFO 27356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T12:40:17.536+07:00  INFO 27356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 783 ms
+2024-09-13T12:40:17.833+07:00  INFO 27356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-09-13T12:40:17.859+07:00  INFO 27356 --- [main] com.example.EmployeePaySlip              : Started EmployeePaySlip in 1.476 seconds (process running for 1.775)
+2024-09-13T12:40:35.544+07:00  INFO 27356 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T12:40:35.544+07:00  INFO 27356 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T12:40:35.546+07:00  INFO 27356 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-13T12:46:21.754+07:00  INFO 17692 --- [main] com.example.EmployeePaySlip              : Starting EmployeePaySlip using Java 21.0.4 with PID 17692 (C:\Users\haimi\Desktop\java\EmployeePaySlip\build\libs\EmployeePaySlip-1.0.0.jar started by MSI in C:\Users\haimi\Desktop\java\EmployeePaySlip)
+2024-09-13T12:46:21.755+07:00  INFO 17692 --- [main] com.example.EmployeePaySlip              : No active profile set, falling back to 1 default profile: "default"
+2024-09-13T12:46:22.408+07:00  INFO 17692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2024-09-13T12:46:22.418+07:00  INFO 17692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-13T12:46:22.418+07:00  INFO 17692 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2024-09-13T12:46:22.480+07:00  INFO 17692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-13T12:46:22.481+07:00  INFO 17692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 692 ms
+2024-09-13T12:46:22.761+07:00  INFO 17692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2024-09-13T12:46:22.777+07:00  INFO 17692 --- [main] com.example.EmployeePaySlip              : Started EmployeePaySlip in 1.363 seconds (process running for 1.658)
+2024-09-13T12:46:35.138+07:00  INFO 17692 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-13T12:46:35.138+07:00  INFO 17692 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-13T12:46:35.139+07:00  INFO 17692 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

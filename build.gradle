@@ -1,0 +1,32 @@
+plugins {
+    id 'org.springframework.boot' version '3.0.0'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Spring Boot Web starter for building RESTful web services
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Thymeleaf dependency for rendering HTML templates
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    
+    // Test dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}

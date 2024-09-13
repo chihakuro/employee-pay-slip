@@ -1,0 +1,15 @@
+server:
+  port: 80  # The port on which the app will run (Azure expects port 80)
+  error:
+    whitelabel:
+      enabled: false  # Disable Whitelabel error page
+
+spring:
+  application:
+    name: EmployeePaySlipApp  # Name of the application
+
+logging:
+  level:
+    org.springframework.web: INFO
+  file:
+    name: logs/spring-boot.log
