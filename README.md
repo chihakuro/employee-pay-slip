@@ -27,11 +27,15 @@ Income tax rates as below:
 
 ## Instructions
 
-`curl -X POST -F 'file=@absolute-path-to-input.csv' https://employeepayslip.azurewebsites.net/generate --output output-name.csv`
+```
+curl -X POST -F 'file=@absolute-path-to-input.csv' https://employeepayslip.azurewebsites.net/generate --output output-name.csv
+```
 
 Example:
 
-`curl -X POST -F 'file=@C:/Users/User/input.csv' https://employeepayslip.azurewebsites.net/generate --output payslip.csv`
+```
+curl -X POST -F 'file=@C:/Users/User/input.csv' https://employeepayslip.azurewebsites.net/generate --output payslip.csv
+```
 
 The input file should be in csv format with headers, like so:
 
