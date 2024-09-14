@@ -39,8 +39,21 @@ public class HomeController {
         }
     
         List<String[]> outputData = new ArrayList<>();
+        boolean isFirstRow = true; // To track the header row
+    
         try {
             for (String[] data : employeeData) {
+                if (isFirstRow) {
+                    // Skip header row
+                    isFirstRow = false;
+                    continue;
+                }
+    
+                // Check if data length is correct for rows after the header
+                if (data.length != 5) {
+                    throw new NumberFormatException("Invalid data format at row: " + employeeData.indexOf(data));
+                }
+    
                 String firstName = data[0];
                 String lastName = data[1];
                 double annualSalary = Double.parseDouble(data[2]);
@@ -65,4 +78,5 @@ public class HomeController {
     
         return new ResponseEntity<>(csvOutput.getBytes(StandardCharsets.UTF_8), headers, HttpStatus.OK);
     }
+    
 }

@@ -25,6 +25,10 @@ dependencies {
     
     // Test dependencies
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework:spring-test'  // Spring Testing
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.mockito:mockito-core'  // Mockito for mocking dependencies
 }
 
 test {
