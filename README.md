@@ -42,13 +42,9 @@ curl -X POST -F 'file=@C:/Users/User/input.csv' https://employeepayslip.azureweb
 
 If forward slashes(/) does not work, use backslashes(\\) or double backslashes(\\\\) instead.
 
-
-
 Alternatively, use Postman instead of curl for sending API request. Make sure to set method to POST -> Enter URL `https://employeepayslip.azurewebsites.net/generate` -> navigate to body -> tick on form-data -> adjust key, value(input file) -> click on 'Send and Download'
 
 ![image](https://github.com/user-attachments/assets/75e1605f-8c6f-4e0d-9a99-04866bfff793)
-
-
 
 The input file should be in csv format with headers, like so:
 
