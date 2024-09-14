@@ -42,7 +42,6 @@ curl -X POST -F 'file=@C:/Users/User/input.csv' https://employeepayslip.azureweb
 
 If forward slashes(/) does not work, use backslashes(\) or double backslashes(\\) instead.
 
-```
 The input file should be in csv format with headers, like so:
 
 ```
