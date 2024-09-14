@@ -67,5 +67,5 @@ Run automated test:
 
 ## Assumptions 
 - The csv file has headers and contains no missing information. Any errors in the csv file will result in blank fields in the output csv.
-- Super rate in csv is assumed to be in percentages (e.g. 10% is written 10.0 in the csv file)
+- Super rate in csv is assumed to be in percent (e.g. 10% is written 10.0 in the csv file)
 - Each payment period lasts precisely one month.
