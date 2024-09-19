@@ -2,12 +2,13 @@
 
 [Web demo](https://employeepayslip.azurewebsites.net)
 
-Coding exercise for generating pay slip of employee in a month. It is deployed to Azure App Services as a microservice that can be called in applications.
+Coding exercise for generating pay slip of employee in a month. It is deployed to Azure App Services and Amazon EKS as a microservice that can be called in applications.
 
 When supplied with employee details: first name, last name, annual salary (positive integer) and super rate (0%-50% inclusive), payment start date, the program should generate pay slip information which includes name, pay period, gross income, income tax, net income and super.
 
 Noteable features:
 - Microsoft Azure: For cloud deployment and management of the web app.
+- Amazon Elastic Kubernetes Service (EKS): For cloud deployment and management with Kubernetes.
 - Spring Boot: For building RESTful web services
 - Gradle: For optimizing building procedures
 - Java: Language used for coding (Version 17)
@@ -28,10 +29,16 @@ Income tax rates as below:
 
 ## Instructions
 
-Initiate a curl command from terminal/command prompt. Then add the absolute path of input csv and specify the desired name for the output csv.
+Initiate a curl command (API Request) from terminal/command prompt. Then add the absolute path of input csv and specify the desired name for the output csv.
 
+Azure:
 ```
 curl -X POST -F 'file=@absolute-path-to-input.csv' https://employeepayslip.azurewebsites.net/generate --output output-name.csv
+```
+
+Amazon EKS:
+```
+curl -X POST -F 'file=@absolute-path-to-input.csv' http://a912bc24894a148c5892eb213e852c54-1475740377.ap-southeast-4.elb.amazonaws.com/generate --output output-name.csv
 ```
 
 Example:
@@ -40,12 +47,9 @@ Example:
 curl -X POST -F 'file=@C:/Users/User/input.csv' https://employeepayslip.azurewebsites.net/generate --output payslip.csv
 ```
 
-If forward slashes(/) does not work, use backslashes(\\) or double backslashes(\\\\) instead.
+If forward slashes(/) does not work, use backslashes(\) or double backslashes(\\) instead.
 
-Alternatively, use Postman instead of curl for sending API request. Make sure to set method to POST -> Enter URL `https://employeepayslip.azurewebsites.net/generate` -> navigate to body -> tick on form-data -> adjust key, value(input file) -> click on 'Send and Download'
-
-![image](https://github.com/user-attachments/assets/75e1605f-8c6f-4e0d-9a99-04866bfff793)
-
+```
 The input file should be in csv format with headers, like so:
 
 ```
@@ -71,5 +75,5 @@ Run automated test:
 
 ## Assumptions 
 - The csv file has headers and contains no missing information. Any errors in the csv file will result in blank fields in the output csv.
-- Super rate in csv is assumed to be in percent (e.g. 10% is written 10.0 in the csv file)
+- Super rate in csv is assumed to be in percentages (e.g. 10% is written 10.0 in the csv file)
 - Each payment period lasts precisely one month.
