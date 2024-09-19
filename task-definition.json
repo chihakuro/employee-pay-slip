@@ -1,0 +1,25 @@
+{
+    "family": "employee-pay-slip-task",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "employee-pay-slip-container",
+            "image": "135519368857.dkr.ecr.ap-southeast-4.amazonaws.com/employee-pay-slip:latest",
+            "memory": 512,
+            "cpu": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "256",
+    "memory": "512",
+    "executionRoleArn": "arn:aws:iam::135519368857:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::135519368857:role/ecsTaskExecutionRole"
+}
